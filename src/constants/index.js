@@ -15,6 +15,7 @@ import {
   git,
   figma,
   docker,
+  brisktech,
   meta,
   starbucks,
   tesla,
@@ -23,6 +24,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  innovative,
+  dpi,
+  webscraper,
+  vidcall,
+  omnifood,
+  portfolio
 } from "../assets";
 
 export const navLinks = [
@@ -42,20 +49,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
+    description: "I craft dynamic, responsive web applications, expertly bridging front-end experiences and back-end functionality for a seamless user journey.",
   },
   {
-    title: "React Developer",
+    title: "React Magician",
     icon: mobile,
+    description: "I specialize in React, conjuring up captivating user interfaces that captivate and engage, ensuring your web applications leave a lasting impression.",
   },
   {
-    title: "Backend Developer",
+    title: "Backend Maestro",
     icon: backend,
+    description: "I orchestrate powerful backends, optimizing the performance and reliability of web applications, enabling them to shine under the hood.",
   },
   {
-    title: "Content Creator",
+    title: "Creative Content Creator",
     icon: creator,
+    description: "I transform content into compelling narratives, crafting stories that resonate and inspire, connecting you with your audience on a deeper level.",
   },
 ];
 
@@ -81,10 +92,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -101,164 +108,178 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Associate Software Engineer",
+    company_name: "Brisktech",
+    icon: brisktech,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "01/2023 - Present, Surat",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading full-stack development projects on cutting-edge technologies, ensuring seamless front-end to back-end integration.",
+      "Proficient in JavaScript, Python, Java, SQL, HTML, CSS, React, Node.js, Next.js, Gatsby, and RESTful APIs.",
+      "Expertise in software architecture, debugging, and problem-solving for optimized code performance.",
+      "Committed to staying current with industry trends, implementing DevOps, Agile methodologies, and CI/CD pipelines.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Web Developer Intern",
+    company_name: "DPI Rainbow Foundation",
+    icon: dpi,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "06/2022 - 07/2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Successfully completed a web development internship, gaining valuable hands-on experience.",
+      "Collaborated closely with the development team to create and deploy a dynamic website.",
+      "Assisted in coding, testing, and debugging web applications, contributing to project success.",
+      "Demonstrated dedication and a keen ability to adapt to new challenges in a fast-paced environment.",
+      "Actively participated in the planning and design phases of web development projects, contributing creative ideas and innovative solutions to enhance user experiences.",
+      "Supported the optimization of website performance, including loading times and responsiveness, ensuring an exceptional end-user experience.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Secondary School Teacher",
+    company_name: "Innovative Tuition",
+    icon: innovative,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "06/2019 - 01/2023, Surat",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Delivered comprehensive education to 9th and 10th-grade students, specializing in Mathematics, Science, English, and Computer subjects.",
+      "Tailored teaching methods to engage students and promote effective learning.",
+      "Fostered a supportive classroom environment, resulting in improved student performance and achievements.",
+      "Collaborated with colleagues and parents to ensure students' academic and personal development.",
     ],
-  },
+  }
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Working with Faiz has been a pleasure. His expertise in full-stack development and strong problem-solving skills greatly contributed to our projects. His commitment to staying updated with industry trends and code optimization makes him a valuable asset.",
+    name: "Varun Patel",
+    designation: "CEO, Brisktech",
+    company: "Brisktech",
+    image: "https://example.com/varun_patel_image.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Faiz's impact as a school teacher was remarkable. His tailored teaching methods improved student performance and achievements. He collaborated effectively with colleagues and parents for students' development.",
+    name: "Rafiyah Ijardaar",
+    designation: "Owner, Innovative Tuition",
+    company: "Innovative Tuition",
+    image: "https://example.com/rafiyah_ijardaar_image.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Faiz's contribution as a web development intern was impressive. He actively participated in project planning and offered innovative solutions to enhance user experiences. His dedication and ability to optimize website performance were essential to our project's success.",
+    name: "Lakshmi Krishnan",
+    designation: "Manager, DPI Rainbow Foundation",
+    company: "DPI Rainbow Foundation",
+    image: "https://example.com/lakshmi_krishnan_image.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Video Call App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A real-time video chat application developed in React, allowing users to have video calls and chat with each other.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "WebRTC",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Video Chat",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image:vidcall,
+    source_code_link: "https://github.com/fzkhan19/WebRTC1-1",
+    live_link: "https://khan-webrtc.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "3D Portfolio",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A 3D portfolio website built using React and Three.js, showcasing my design and development skills with interactive 3D elements.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Three.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Portfolio",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image:portfolio,
+    source_code_link: "https://github.com/fzkhan19/Portfolio",
+    live_link: "https://portfolio-fzkhan.netlify.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Google Web Scraper",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A web scraper built with Node.js and Puppeteer to extract Google reviews, providing valuable data for analysis and insights.",
     tags: [
       {
-        name: "nextjs",
+        name: "Node.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Puppeteer",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Web Scraper",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image:webscraper,
+    source_code_link: "https://github.com/fzkhan19/googleReviewScraper",
+    live_link: "https://github.com/fzkhan19/googleReviewScraper",
+  },
+  {
+    name: "Omnifood",
+    description:
+      "A single-page application (SPA) showcasing my design skills, built with pure HTML and CSS, highlighting the concept of Omnifood.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Design",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:omnifood,
+    source_code_link: "https://github.com/fzkhan19/Omnifood",
+    live_link: "https://omnifood-faiz.netlify.app/",
   },
 ];
 

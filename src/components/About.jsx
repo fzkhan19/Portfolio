@@ -39,11 +39,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in JavaScript, and
-        expertise in frameworks like React, Node.js, and Gatsby.js. I'm a quick
-        learner and collaborate closely with clients to create efficient,
-        scalable, and user-friendly solutions that solve real-world problems.
-        Let's work together to bring your ideas to life!
+        Hello, I'm Faiz Khan, a Fullstack Developer based in India. With a passion for creating exceptional software solutions, I specialize in React and Next.js, ensuring your web projects are at the forefront of innovation.
+
+My expertise extends beyond front-end development. I'm well-versed in AWS and GCP, two of the most prominent cloud platforms. I also work with JavaScript, Python, TypeScript, and more. I've successfully led projects and implemented DevOps practices to deliver efficient and secure applications.
+
+Let's collaborate and turn your ideas into reality!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
