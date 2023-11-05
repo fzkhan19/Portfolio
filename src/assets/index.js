@@ -38,7 +38,14 @@ import portfolio from "./portfolio.png";
 import webscraper from "./webscraper.jpg";
 import omnifood from "./omnifood.png";
 
+import varun from "./varun.jpg";
+import rafiyah from "./rafiyah.png";
+import male from "./male.jpg";
+
 export {
+  varun,
+  rafiyah,
+  male,
   logo,
   backend,
   creator,

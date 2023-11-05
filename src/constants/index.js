@@ -8,7 +8,6 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -16,20 +15,16 @@ import {
   figma,
   docker,
   brisktech,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   innovative,
   dpi,
   webscraper,
   vidcall,
   omnifood,
-  portfolio
+  portfolio,
+  varun,
+  rafiyah,
+  male
 } from "../assets";
 
 export const navLinks = [
@@ -170,25 +165,25 @@ const testimonials = [
     testimonial:
       "Working with Faiz has been a pleasure. His expertise in full-stack development and strong problem-solving skills greatly contributed to our projects. His commitment to staying updated with industry trends and code optimization makes him a valuable asset.",
     name: "Varun Patel",
-    designation: "CEO, Brisktech",
+    designation: "CEO",
     company: "Brisktech",
-    image: "https://example.com/varun_patel_image.jpg",
+    image: varun,
   },
   {
     testimonial:
       "Faiz's impact as a school teacher was remarkable. His tailored teaching methods improved student performance and achievements. He collaborated effectively with colleagues and parents for students' development.",
     name: "Rafiyah Ijardaar",
-    designation: "Owner, Innovative Tuition",
+    designation: "Owner",
     company: "Innovative Tuition",
-    image: "https://example.com/rafiyah_ijardaar_image.jpg",
+    image: rafiyah,
   },
   {
     testimonial:
       "Faiz's contribution as a web development intern was impressive. He actively participated in project planning and offered innovative solutions to enhance user experiences. His dedication and ability to optimize website performance were essential to our project's success.",
     name: "Lakshmi Krishnan",
-    designation: "Manager, DPI Rainbow Foundation",
+    designation: "Manager",
     company: "DPI Rainbow Foundation",
-    image: "https://example.com/lakshmi_krishnan_image.jpg",
+    image: male,
   },
 ];
 

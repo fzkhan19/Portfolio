@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "react-toastify/dist/ReactToastify.css";
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,32 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+
+/* Custom styles for toast messages */
+.Toastify__toast {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #fff; /* Text color for toast messages */
+  border-radius: 4px;
+  background: transparent; /* Transparent background for toast messages */
+  padding: 8px;
+}
+
+/* Style different toast types (success, error, etc.) */
+.Toastify__toast--success {
+  background: #00cea8; /* Background color for success toast */
+}
+
+.Toastify__toast--error {
+  background: #f12711; /* Background color for error toast */
+}
+
+/* Example: Change the position of the progress bar */
+.Toastify__progress-bar {
+  height: 4px;
+  background-color: #00cea8; /* Progress bar color */
+}
+
 
 .hash-span {
   margin-top: -100px;
@@ -125,6 +152,7 @@
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
 }
+
 
 @keyframes mulShdSpin {
   0%,

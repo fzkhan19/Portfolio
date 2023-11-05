@@ -1,11 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, Suspense, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify"; // Import toast from react-toastify
+import "react-toastify/dist/ReactToastify.css"; // Import styles
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
+// Lazy load the EarthCanvas component
+const LazyEarthCanvas = React.lazy(() => import("./canvas/Earth"));
 
 const Contact = () => {
   const formRef = useRef();
@@ -30,13 +34,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    //template_qy7z7gk
-    //service_bscrzzp
-    //Ibne2DuOKxK0ZfwTY
     emailjs
       .send(
         "service_oyi2xko",
-        "template_qy7z7gk",
+        "template_3mbfabo",
         {
           from_name: form.name,
           to_name: "Faiz Khan",
@@ -49,7 +50,8 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          // Show a success toast message
+          toast.success("Email sent successfully. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -61,15 +63,14 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          // Show an error toast message
+          toast.error("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -129,7 +130,9 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyEarthCanvas />
+        </Suspense>
       </motion.div>
     </div>
   );
